@@ -1,0 +1,8 @@
+{
+  "directory": "",
+  "shorthand-resolver": "git://github.com/{{owner}}/{{package}}.git",
+
+  "color": true,
+  "interactive": true,
+  "analytics": true
+}
