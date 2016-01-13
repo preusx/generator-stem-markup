@@ -1,5 +1,5 @@
 {
-  "directory": "",
+  "directory": "./dev/bower_components",
   "shorthand-resolver": "git://github.com/{{owner}}/{{package}}.git",
 
   "color": true,
