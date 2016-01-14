@@ -84,15 +84,17 @@ module.exports = yeoman.generators.Base.extend({
 
   configuring: {
     userInfo: function () {
-      var done = this.async();
+      if(this.props.githubUser) {
+        var done = this.async();
 
-      githubUser(this.props.githubUser, function (res) {
-        this.props.realname = res.name;
-        this.props.email = res.email !== null ? res.email : '';
-        this.props.githubUrl = res.html_url;
+        githubUser(this.props.githubUser, function (res) {
+          this.props.realname = res.name;
+          this.props.email = res.email !== null ? res.email : '';
+          this.props.githubUrl = res.html_url;
 
-        done();
-      }.bind(this), this.log);
+          done();
+        }.bind(this), this.log);
+      }
     },
 
     package: function() {
@@ -120,6 +122,20 @@ module.exports = yeoman.generators.Base.extend({
 
       this.fs.writeJSON(this.destinationPath('package.json'), packageSettings);
     },
+
+    bowerSetName: function() {
+      var bowerFiles = [
+        'bower.json',
+        'dev/vendor/bower.json',
+      ];
+
+      for(var fname of bowerFiles) {
+        var settings = this.fs.readJSON(this.templatePath(fname));
+        settings.name = this.props.applicationName;
+
+        this.fs.writeJSON(this.destinationPath(fname), settings);
+      }
+    }
   },
 
   writing: function () {

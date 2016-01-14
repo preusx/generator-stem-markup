@@ -6,7 +6,7 @@ let helpers = require('yeoman-test');
 describe('generator-stem-markup:app', function() {
   let generator;
 
-  before((done) => {
+  before(function (done) {
     helpers.run(path.join(__dirname, '../generators/app'))
       .inTmpDir()
       .withOptions({
@@ -14,7 +14,7 @@ describe('generator-stem-markup:app', function() {
         'skip-install': true
       })
       .withPrompts({
-        githubUser: '',
+        githubUser: 'preusx',
         applicationName: 't',
       })
       .on('ready', (instance) => {
