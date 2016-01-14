@@ -5,7 +5,7 @@ helpers = require 'yeoman-test'
 describe 'generator-stem-markup:app', ->
   generator = {}
 
-  before (done) ->
+  beforeEach (done) ->
     helpers.run path.join(__dirname, '../generators/app')
       .inTmpDir()
       .withOptions({
@@ -22,4 +22,4 @@ describe 'generator-stem-markup:app', ->
       .on('end', done)
 
   describe '#createFiles', ->
-    # it 'should generate dot files'
+    it 'should generate dot files'
