@@ -23,3 +23,7 @@ describe 'generator-stem-markup:app', ->
 
   describe '#createFiles', ->
     it 'should generate dot files'
+    it 'should generate foundation files'
+
+  describe '#packageConfig', ->
+    it 'should change name in bower and package json files'
