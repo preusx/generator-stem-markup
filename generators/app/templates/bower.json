@@ -1,10 +1,17 @@
 {
   "name": "stem-markup",
   "devDependencies": {
-    "stem-stylus-extensions": "preusx/stem-stylus-extensions#0.2.6",
+    "stem-stylus-extensions": "preusx/stem-stylus-extensions#0.2.7",
     "stem-stylus-responsive": "preusx/stem-stylus-responsive#0.2.4",
     "stem-stylus-grid": "preusx/stem-stylus-grid#0.2.7",
     "stem-stylus-typo": "preusx/stem-stylus-typo#0.2.0",
     "stem-stylus-color-scheme": "preusx/stem-stylus-color-scheme#0.1.2"
+  },
+  "resolutions": {
+    "stem-stylus-extensions": "0.2.7",
+    "stem-stylus-responsive": "0.2.4",
+    "stem-stylus-grid": "0.2.7",
+    "stem-stylus-typo": "0.2.0",
+    "stem-stylus-color-scheme": "0.1.2"
   }
 }
