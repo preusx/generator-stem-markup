@@ -1,6 +1,6 @@
 {
   "name": "stem-markup",
   "dependencies": {
-    "jquery": "latest"
+    "jquery": "1.x"
   }
 }

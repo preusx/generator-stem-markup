@@ -9,8 +9,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "gulp": "3.9.0",
-    "stylus": "0.53.0",
-    "stem-gulp-tasks": "git://github.com/preusx/stem-gulp-tasks.git#0.1.1"
+    "gulp": "3.9.1",
+    "stylus": "0.54.2",
+    "stem-gulp-tasks": "git://github.com/preusx/stem-gulp-tasks.git#0.1.3"
   }
 }

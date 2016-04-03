@@ -8,15 +8,12 @@ loader(__dirname, [
     'copy-css.js',
     'copy-fonts.js',
     'copy-img.js',
-    'copy-php.js',
-    'copy-python.js',
 
     'jade-html.js',
-    'jade-php.js',
 
     'stylus-style.js',
 
-    'js-base.js',
+    'js-webpack.js',
   ]);
 
 
@@ -29,19 +26,16 @@ gulp.task('copy', [
     'copy-css:build',
     'copy-fonts:build',
     'copy-img:build',
-    'copy-php:build',
-    'copy-python:build',
   ]);
 
 gulp.task('build', [
     'copy',
 
     'jade-html:build',
-    'jade-php:build',
 
     'stylus-style:build',
 
-    'js-base:build',
+    'js-webpack:build',
   ]);
 
 gulp.task('dist', ['build']);
